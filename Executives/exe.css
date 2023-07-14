@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@300&display=swap');
+*{
+padding: 0;
+margin: 0;
+}
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: #f5f5f5;
+  font-size: 15px;
+  color: rgb(137, 68, 201);
+ }
+ header{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin: 20px;
+  padding: 0 20px;
+ }
+header .logo{
+    display: flex;
+    align-items: center;
+  }
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+  }
+ul a {
+    text-decoration: none;
+    color: rgb(137, 68, 201);
+    font-weight: 500;
+  }
+  ul a:hover{
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 8px;
+    width: 50px;
+    background-color: rgb(137, 68, 201);
+    font-weight: 400;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+  .menu{
+    display: none;
+    cursor: pointer;
+  }
+  .menu div{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(137, 68, 201);
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .change .mobileMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 200px;
+  }
+  .mobileMenu{
+    height: calc(100vh - 40px);
+    width: 100px;
+    display: none;
+    position: absolute;
+  }
+@media screen and (max-width: 900px){
+.menu{
+    display : block;
+     float:right;
+}
+header nav{
+      display: none;
+    }
+}
+.logo img{
+    border-radius: 50%;
+    width: 15%;
+}
