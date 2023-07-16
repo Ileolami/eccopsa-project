@@ -3,9 +3,7 @@ const hamburger = document.querySelector('#mine');
 hamburger.addEventListener('click', function (){
     navLink.classList.toggle('show');
   });
-
-  
-  var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
   // Apply to all slideshows that you define with the markup wrote
   slideshows.forEach(initSlideShow);
   function initSlideShow(slideshow) {
