@@ -58,8 +58,40 @@ ul li a:hover{
   display: none !important; 
   cursor: pointer;
 }
+.timeTable{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
 table{
-  
+  border-collapse: collapse;
+  background-color: linear-gradient( rgb(139, 92, 187), rgb(232, 218, 246));
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  /* margin: 20px 0; */
+
+}
+tr{
+  border: 1px solid rgb(232, 218, 246);
+}
+tr:hover{
+  background-color: rgb(232, 218, 246);
+  color: rgb(137, 68, 201);
+  font-weight: bold;
+}
+td{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid rgb(232, 218, 246);
+  font-weight: bold;
+}
+th{
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(232, 218, 246);
+  color: rgb(137, 68, 201);
+  font-weight: bold;
+  /* border: 1px solid black; */
 }
 footer {
   display: flex;
@@ -110,7 +142,6 @@ footer ul{
     .nav-bar li {
       margin: 0 0 5px 0;
     }
-  
     .nav-toggle{
       display: block !important;
       cursor: pointer;
@@ -127,6 +158,19 @@ footer ul{
 @media screen and (max-width: 400px) {
   body{
     font-size: 12px;
+  }
+  .nav-bar ul.show{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  table{
+    margin-left: 110px;
+  }
+  th, td{
+    text-align:center ;
+    padding: 8px;
   }
   footer {
     min-height: 50px;
