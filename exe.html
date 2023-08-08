@@ -5,37 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EECOPSA</title>
     <link rel="icon" type="image/png" href="./logo_adobe_express.svg">
+    <link rel="import" href="index.html">
     <link rel="import" href="Executives/exe.html">
-    <link rel="import" href="News/news.html">
-    <link rel="import" href="Socials/socio.html">
-    <link rel="stylesheet" href="exe.css">
+    <link rel="import" href="/Academic/academic.html">
+    <link rel="import" href="/News/news.html">
+    <link rel="stylesheet" href="./exe.css">  
+  
 </head>
 <body>
-    <main>
-        <header>
-            <div class="logo">
-            <img src="/logo_adobe_express.svg" alt="" ></div>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./Executives/exe.html">Executives</a></li> 
-                    <li><a href="./Socials/socio.html">Socials</a></li>
-                    <li><a href="./News/news.html">News</a></li>
-                </ul>
-            </nav>
-            <div class="menu" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobileMenu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./Executives/exe.html">Executives</a></li> 
-                    <li><a href="./Socials/socio.html">Socials</a></li>
-                    <li><a href="./News/news.html">News</a></li>
-                </ul>
+    <nav>
+        <div class="nav-bar">
+          <span><img src="./logo_adobe_express.svg" alt="" height="30px"></span>
+          <div class="nav-links">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="/exe.html">Executives</a></li> 
+                  <li><a href="academic.html">Academic</a></li>
+                  <li><a href="/news.html">News</a></li>
+              </ul>
+              <div class="nav-toggle" id="toggle"><i class="fas fa-bars"></i></div>
+          </div>
+        </div>
+          </nav>
+          <section class="executives">
+            <div class="container">
+                <h1>STUDENT EXECUTIVES</h1>
+                <div class="student-executives">
+                <div><img src="./preside.JPG" alt="preside"></div>
+                <div><img src="./w4.jpg" alt=""></div>
+                <div><img src="./WhatsApp Image 2023-07-01 at 17.15.23.jpg" alt=""></div>
+                <div><img src="./WhatsApp Image 2023-07-01 at 17.15.24.jpg" alt=""></div>
+                <div><img src="./DSC_2425.jpg" alt=""></div>
+                <div><img src="./IMG_0536.jpg" alt=""></div>
+                <div><img src="./IMG_1483.JPG" alt=""></div>
+                <div><img src="./IMG_20230406_163702.jpg" alt=""></div>
+                <div><img src="./logo_adobe_express.svg" alt=""></div>
             </div>
-        </header>
-        </main>
-        <script></script>
+            </div>
+          </section>
+          <footer>
+            <div class="footer-logo">
+                <img src="./logo_adobe_express.svg" alt="">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/exe.html">Executives</a></li> 
+                    <li><a href="/academic.html">Academic</a></li>
+                    <li><a href="/news.html">News</a></li>
+                </ul>
+        </div> 
+    </footer>
+    <script src="https://kit.fontawesome.com/7f6d91d128.js" crossorigin="anonymous"></script>
+     <script src="/academic.js"></script>
 </body>
 </html>
